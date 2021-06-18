@@ -13,6 +13,7 @@ cmdindex=0
 while true  
 
 do
+# git test
 
 user_cmd=(`ps -ef | awk '{print $1,$2,$8}' | grep ^${user_name[${index}]} | awk '{print $2,$3}'|sort -nr| awk '{print $2}' |  head  -n 20`)
 user_pid=(`ps -ef | awk '{print $1,$2}' | grep ^${user_name[${index}]} | awk '{print $2}'|sort -nr| head -n 20`)
